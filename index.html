@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>Movie Review | Review</title>
+
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="star.css">
+
+		<style type="text/css">
+			body {background-color: #f5f0f0;}
+
+		</style>
+		
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body onload="getRandomMedia()">
+		
+
+		<div id="site-content">
+			<header class="site-header">
+				<div class="container">
+
+					<!-- ThinkBIG Logo Start-->
+					<a href="http://think-big.solutions/" id="branding">
+						<img src="logo.png" width="130" height="100" alt="" class="logo">
+					</a>
+					<!-- ThinkBIG Logo End-->
+
+					<!-- Subscribe START-->
+					<div class="col-md-2" style="float: right">
+						<div class="contact-form">
+							<input type="submit"
+								   disabled=disabled
+								   value="Subscribe"
+								   style="color: #FFFFFF; display: block; margin-bottom:5px; width: 70%; background-color:  #1e7b7b;">
+								   <input type="submit" value="Sign in"
+								   style="color: #FFFFFF; display: block; margin-bottom:
+									   14px; width:70%; background-color:  #1e7b7b;">
+						</div>
+					</div>
+					<!-- Subscribe End-->
+
+					
+				</div>
+
+			</header>
+
+
+			<main class="main-content">
+				<div class="container">
+					<div class="page">
+							<form class="search-form" style="float: right">
+									<input id="search_input" type="text" placeholder="Search..." >
+									<button type="button" style="color: #FFFFFF; background-color: #1e7b7b"><i class="fa fa-search"></i></button> 
+								</form>
+						<div class="filters">
+							<label  style="padding-right: 24px;font-size: 20px; font-weight: 700; color: #1e7b7b;">|category</label> 
+							<label  style="padding-right: 50px;font-size: 20px; font-weight: 700; color: #1e7b7b;">|release year<hr style="height:2px; visibility:hidden;" /><br></label> 
+							<input type="checkbox" value="action"> <label for="action" style="padding-right: 50px;">Action</label>   
+							<input type="checkbox" value="2012"> <label for="2012" style="padding-right: 50px;">2012<br></label>
+							<input type="checkbox" value="drama"> <label for="drama" style="padding-right: 49px;">Drama</label>
+							<input type="checkbox" value="2013"> <label for="2013" style="padding-right: 20px;">2013<br></label>
+							<input type="checkbox" value="fantasy"> <label for="fantasy" style="padding-right: 41px;">Fantasy</label>
+							<input type="checkbox" value="2014"> <label for="2014" style="padding-right: 20px;">2014<br></label>
+							<input type="checkbox"> Horror<br>
+							<input type="checkbox"> Adventure<br>
+						</div>
+
+
+						<div id="media" class="movie-list">
+
+
+						</div> <!-- .movie-list -->
+						<div class="col-md-2" style="float: right">
+							<div class="contact-form">
+								<a href="second.html">
+								<input type="submit"
+									   value="next"
+									   style="color: #FFFFFF; display: block; margin-bottom:14px; width: 100%; height:40px; background-color:  #1e7b7b;">
+									   
+									   	
+									   </a>
+							</div>
+						</div>
+						<div class="col-md-2" style="float: right">
+							<div class="contact-form">
+								<input type="submit"
+								       disabled=disabled
+									   value="previous"
+									   style="color: #FFFFFF; display: block; margin-bottom:14px; width: 100%; height:40px; background-color:  #1e7b7b;">
+							</div>
+						</div>
+
+
+
+					</div>
+
+				</div> <!-- .container -->
+			</main>
+
+
+
+
+
+
+			<footer class="site-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<div class="widget">
+								<h3 class="widget-title">About Us</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia tempore vitae mollitia nesciunt saepe cupiditate</p>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="widget">
+								<h3 class="widget-title">Recent Review</h3>
+								<ul class="no-bullet">
+									<li>Lorem ipsum dolor</li>
+									<li>Sit amet consecture</li>
+									<li>Dolorem respequem</li>
+									<li>Invenore veritae</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="widget">
+								<h3 class="widget-title">Help Center</h3>
+								<ul class="no-bullet">
+									<li>Lorem ipsum dolor</li>
+									<li>Sit amet consecture</li>
+									<li>Dolorem respequem</li>
+									<li>Invenore veritae</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="widget">
+								<h3 class="widget-title">Join Us</h3>
+								<ul class="no-bullet">
+									<li>Lorem ipsum dolor</li>
+									<li>Sit amet consecture</li>
+									<li>Dolorem respequem</li>
+									<li>Invenore veritae</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="widget">
+								<h3 class="widget-title">Social Media</h3>
+								<ul class="no-bullet">
+									<li>Facebook</li>
+									<li>Twitter</li>
+									<li>Google+</li>
+									<li>Pinterest</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="widget">
+								<h3 class="widget-title">Newsletter</h3>
+								<form action="#" class="subscribe-form">
+									<input type="text" placeholder="Email Address">
+								</form>
+							</div>
+						</div>
+					</div> <!-- .row -->
+
+					<div class="colophon">Copyright 2014 Company name, Designed by Themezy. All rights reserved</div>
+				</div> <!-- .container -->
+
+			</footer>
+		</div>
+		<!-- Default snippet for navigation -->
+		
+
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/capp.js"></script>
+
+	</body>
+
+</html>
